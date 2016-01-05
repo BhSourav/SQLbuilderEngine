@@ -1,6 +1,6 @@
 {
-  "table":{
+  "table":[{
     "name":"s_asset",
     "Column":[{"name":"row_id","ColAttrib":{"size":"","nullable":"","datatype":""}}]
-  }
+  }]
 }

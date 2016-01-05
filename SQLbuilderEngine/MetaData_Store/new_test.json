@@ -1,18 +1,24 @@
 {
-  "name" : "s_asset",
-  "colObj" : [ {
-    "name" : "row_id",
-    "colattrib" : {
-      "size" : 3,
-      "nullable" : false,
-      "datatype" : "char"
-    }
+  "name" : "oneview_owner",
+  "tabObj" : [ {
+    "name" : "s_asset",
+    "colObj" : [ {
+      "name" : "row_id",
+      "colattrib" : {
+        "size" : 3,
+        "nullable" : false,
+        "datatype" : "char"
+      }
+    } ]
   }, {
-    "name" : "asset_id",
-    "colattrib" : {
-      "size" : 3,
-      "nullable" : false,
-      "datatype" : "char"
-    }
+    "name" : "s_asset",
+    "colObj" : [ {
+      "name" : "asset_id",
+      "colattrib" : {
+        "size" : 3,
+        "nullable" : false,
+        "datatype" : "char"
+      }
+    } ]
   } ]
 }
