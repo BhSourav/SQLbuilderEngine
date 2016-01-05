@@ -1,0 +1,18 @@
+{
+  "name" : "s_asset",
+  "colObj" : [ {
+    "name" : "row_id",
+    "colattrib" : {
+      "size" : 3,
+      "nullable" : false,
+      "datatype" : "char"
+    }
+  }, {
+    "name" : "asset_id",
+    "colattrib" : {
+      "size" : 3,
+      "nullable" : false,
+      "datatype" : "char"
+    }
+  } ]
+}
