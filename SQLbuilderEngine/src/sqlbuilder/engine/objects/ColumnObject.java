@@ -17,7 +17,7 @@ public class ColumnObject {
 	}
 	
 	private String name;
-	ColAttribObject colattrib;
+	ColAttribObject columnattrib;
 	
 	
 	public String getName() {
@@ -26,11 +26,11 @@ public class ColumnObject {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public ColAttribObject getColattrib() {
-		return colattrib;
+	public ColAttribObject getColumnattrib() {
+		return columnattrib;
 	}
-	public void setColattrib(ColAttribObject colattrib) {
-		this.colattrib = colattrib;
+	public void setColumnattrib(ColAttribObject colattrib) {
+		this.columnattrib = colattrib;
 	}
 	
 

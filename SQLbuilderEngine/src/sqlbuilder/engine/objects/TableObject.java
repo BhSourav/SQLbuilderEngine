@@ -28,10 +28,10 @@ public class TableObject {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<ColumnObject> getColObj() {
+	public List<ColumnObject> getcolumn() {
 		return column;
 	}
-	public void setColObj(ColumnObject colObj) {
+	public void setcolumn(ColumnObject colObj) {
 		this.column.add(colObj);
 	}
 	

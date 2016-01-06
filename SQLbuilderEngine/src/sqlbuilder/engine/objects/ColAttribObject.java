@@ -17,8 +17,9 @@ public class ColAttribObject {
 	}
 	
 	private int size;
-	private boolean nullable;
+	enum nullable{yes,no};
 	private String datatype;
+	private String isNullable;
 	
 	public int getSize() {
 		return size;
@@ -26,11 +27,11 @@ public class ColAttribObject {
 	public void setSize(int size) {
 		this.size = size;
 	}
-	public boolean isNullable() {
-		return nullable;
+	public String getisNullable() {
+		return isNullable;
 	}
-	public void setNullable(boolean nullable) {
-		this.nullable = nullable;
+	public void setNullable(nullable null1) {
+		this.isNullable = null1.toString();
 	}
 	public String getDatatype() {
 		return datatype;
@@ -38,5 +39,5 @@ public class ColAttribObject {
 	public void setDatatype(String datatype) {
 		this.datatype = datatype;
 	}
-
+	
 }
