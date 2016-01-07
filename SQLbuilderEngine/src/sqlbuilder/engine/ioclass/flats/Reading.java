@@ -16,6 +16,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.cfg.MapperConfig;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
 import sqlbuilder.engine.objects.SchemaObject;
@@ -51,7 +52,7 @@ public class Reading {
 	}
 
 	public Object getjsonTableObject(String filepath) {
-		//ObjectMapper mapper=new ObjectMapper();
+		ObjectMapper mapper=new ObjectMapper();
 		TableObject to=null;
 		try {
 			JsonFactory jsonFactory = new JsonFactory();
@@ -64,10 +65,17 @@ public class Reading {
 			//System.out.println(node1.getNodeType());
 			//System.out.println(node1.get("name").toString());
 			
-			Iterator<Entry<String, JsonNode>> object = node1.fields();
-			while (object.hasNext()) {
-				Entry<String, JsonNode> obj=object.next();
-				System.out.println(obj.getValue().toString());
+			for (int i = 0; i < node1.size(); i++) {
+				//System.out.println("hello");
+				//String tabName=node1.get(i).get("name").asText();
+				//System.out.println(tabName);
+				if( node1.get(i).get("name").asText().equals("s_asset"))
+				{
+					System.out.println(node1.get(i).toString());
+					to=mapper.readValue(node1.get(i).toString(), TableObject.class);
+					//System.out.println(to.getName().toString());
+					break;
+				}
 			}
 			
 			/*if( node1.get("name").equals("s_asset"))

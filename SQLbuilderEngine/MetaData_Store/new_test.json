@@ -18,7 +18,7 @@
       }
     } ]
   }, {
-    "name" : "s_asset",
+    "name" : "s_asset_x",
     "column" : [ {
       "name" : "asset_id",
       "columnattrib" : {
