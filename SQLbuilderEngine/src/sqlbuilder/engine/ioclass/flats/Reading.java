@@ -71,8 +71,9 @@ public class Reading {
 				//System.out.println(tabName);
 				if( node1.get(i).get("name").asText().equals("s_asset"))
 				{
-					System.out.println(node1.get(i).toString());
-					to=mapper.readValue(node1.get(i).toString(), TableObject.class);
+					//System.out.println(node1.get(i));
+					JsonNode node2=node1.get(i);
+					to=mapper.readValue(node2.toString(), TableObject.class);
 					//System.out.println(to.getName().toString());
 					break;
 				}
