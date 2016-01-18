@@ -79,7 +79,7 @@ public class SchemaObject {
 		cobj.setColumnattrib(co);
 		cobj.setName("asset_id");
 		to=new TableObject();
-		to.setName("s_asset");
+		to.setName("s_asset_x");
 		to.setcolumn(cobj);
 		so.settable(to);
 		

@@ -24,7 +24,7 @@
       "columnattrib" : {
         "size" : 3,
         "datatype" : "char",
-        "isNullable" : "yes"
+        "isNullable" : "no"
       }
     } ]
   } ]

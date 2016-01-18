@@ -14,6 +14,7 @@ import org.json.JSONException;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.cfg.MapperConfig;
@@ -53,6 +54,7 @@ public class Reading {
 
 	public Object getjsonTableObject(String filepath) {
 		ObjectMapper mapper=new ObjectMapper();
+		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		TableObject to=null;
 		try {
 			JsonFactory jsonFactory = new JsonFactory();
@@ -69,11 +71,12 @@ public class Reading {
 				//System.out.println("hello");
 				//String tabName=node1.get(i).get("name").asText();
 				//System.out.println(tabName);
-				if( node1.get(i).get("name").asText().equals("s_asset"))
+				if( node1.get(i).get("name").asText().equals("s_asset_x"))
 				{
-					//System.out.println(node1.get(i));
-					JsonNode node2=node1.get(i);
-					to=mapper.readValue(node2.toString(), TableObject.class);
+					System.out.println(node1.get(i).toString());
+					String node2=node1.get(i).toString();
+					
+					to=mapper.readValue(node2, TableObject.class);
 					//System.out.println(to.getName().toString());
 					break;
 				}
