@@ -5,11 +5,6 @@ package sqlbuilder.engine.ioclass.flats;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Map.Entry;
-
-import org.json.JSONArray;
-import org.json.JSONException;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
@@ -17,7 +12,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.cfg.MapperConfig;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
 import sqlbuilder.engine.objects.SchemaObject;
