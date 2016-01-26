@@ -3,5 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/json_lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/json_parser"/>
+	<classpathentry kind="lib" path="D:/JAVA/JARs/commons-io-2.4-bin/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/JAVA/JARs/orafile-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/JAVA/JARs/antlr-3.0.jar/antlr-3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
