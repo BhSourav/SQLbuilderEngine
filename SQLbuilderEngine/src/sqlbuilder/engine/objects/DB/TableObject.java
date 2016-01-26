@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sqlbuilder.engine.objects;
+package sqlbuilder.engine.objects.DB;
 
 import java.util.ArrayList;
 import java.util.List;

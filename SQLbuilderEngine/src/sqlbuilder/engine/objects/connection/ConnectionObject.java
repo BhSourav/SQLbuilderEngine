@@ -14,7 +14,6 @@ import java.util.Map;
 public class ConnectionObject {
 
 	private String filePath;
-	private String conKey=ConnectionProfileObject.class.getName();
 	private List<Map<String, ConnectionProfileObject>> conList=new ArrayList<>();
 	/**
 	 * @return the filePath
@@ -29,18 +28,6 @@ public class ConnectionObject {
 		this.filePath = filePath;
 	}
 	/**
-	 * @return the conKey
-	 */
-	public String getConKey() {
-		return conKey;
-	}
-	/**
-	 * @param conKey the conKey to set
-	 */
-	public void setConKey(String conKey) {
-		conKey=ConnectionProfileObject.class.getName();
-	}
-	/**
 	 * @return the conList
 	 */
 	public List<Map<String, ConnectionProfileObject>> getConList() {
@@ -49,8 +36,8 @@ public class ConnectionObject {
 	/**
 	 * @param conList the conList to set
 	 */
-	public void setConList(List<Map<String, ConnectionProfileObject>> conList) {
-		this.conList = conList;
+	public void setConList(Map<String, ConnectionProfileObject> conMap) {
+		this.conList.add(conMap);
 	}
 	
 }

@@ -14,8 +14,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-import sqlbuilder.engine.objects.SchemaObject;
-import sqlbuilder.engine.objects.TableObject;
+import sqlbuilder.engine.objects.DB.SchemaObject;
+import sqlbuilder.engine.objects.DB.TableObject;
 
 /**
  * @author Sourav created on 7 Jan 2016
