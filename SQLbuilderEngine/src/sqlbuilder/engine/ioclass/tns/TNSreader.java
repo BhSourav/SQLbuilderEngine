@@ -51,6 +51,7 @@ public class TNSreader {
 		//str = str.replace("\uFEFF", "");
 		System.out.println(str);
 		tns=Orafile.parse(str);
+		System.out.println(tns);
 	}
 	
 	public List<String> getAliasNames() {
