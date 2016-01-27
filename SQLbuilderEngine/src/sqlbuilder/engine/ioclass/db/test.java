@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sqlbuilder.engine.ioclass.flats.db;
+package sqlbuilder.engine.ioclass.db;
 
 import java.io.File;
 import java.io.IOException;

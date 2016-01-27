@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sqlbuilder.engine.ioclass.flats.db;
+package sqlbuilder.engine.ioclass.db;
 
 /**
  * @author Sourav created on Jan 26, 2016
