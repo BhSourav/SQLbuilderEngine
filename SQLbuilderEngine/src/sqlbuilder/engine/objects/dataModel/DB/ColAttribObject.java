@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sqlbuilder.engine.objects.DB;
+package sqlbuilder.engine.objects.dataModel.DB;
 
 /**
  * @author Sourav created on 05/01/2016

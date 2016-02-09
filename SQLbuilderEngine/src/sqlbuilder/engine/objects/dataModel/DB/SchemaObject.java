@@ -1,7 +1,7 @@
 /**
  * 
  */
-package sqlbuilder.engine.objects.DB;
+package sqlbuilder.engine.objects.dataModel.DB;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import sqlbuilder.engine.objects.DB.ColAttribObject.nullable;
+import sqlbuilder.engine.objects.dataModel.DB.ColAttribObject.nullable;
 
 /**
  * @author Sourav created on 5 Jan 2016
