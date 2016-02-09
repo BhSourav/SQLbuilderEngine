@@ -1,0 +1,23 @@
+{
+   "name":"oneview_owner",
+   "table":[
+      {
+         "name":"s_order",
+         "joinee":[
+            {
+               "name":"s_asset",
+               "join":[
+                  {
+                     "tableName":"s_order",
+                     "columnName":"row_id"
+                  },
+                  {
+                     "tableName":"s_asset",
+                     "columnName":"orig_order_id"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
